@@ -1,0 +1,45 @@
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  @mixin set-font $line,
+  calc($line * 1.5);
+  /* размер шрифта - 14px, высота строки - 21px */
+  font-family: $font-family-regular;
+  @media($tablet) {
+    background-color: $base-color-lightgrey;
+  }
+}
+
+.page__main {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__main-block {
+  width: 100%;
+}
+
+.page__success-text {
+  @mixin set-font calc($line * 2.5),
+  calc($line * 1.5);
+  text-align: center;
+}
+
+.page__bread {
+  cursor: pointer;
+  text-decoration: none;
+  color: $base-color-darkgrey;
+  padding: 10px;
+  display: block;
+}
+
+.page__bread:hover {
+  color: $base-color-black;
+}

@@ -1,0 +1,46 @@
+.page-footer {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: $font-family-bold;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.page-footer__social,
+.page-footer__copyright {
+  width: 50%;
+}
+
+.page-footer__social {
+  text-align: right;
+}
+
+.page-footer__copyright {
+  @mixin set-font calc($line * 0.9),
+  calc($line * 1);
+  color: $base-color-darkgrey;
+  margin: 0;
+}
+.page-footer__copyright a {
+  text-decoration: none;
+  color: $base-color-darkgrey;
+}
+
+.page-footer__copyright a:hover {
+  color: $base-color-black;
+}
+
+.page-footer__social-link {
+  position: relative;
+  display: inline-block;
+  margin-left: 3px;
+  min-width: 30px;
+  height: 32px;
+  vertical-align: middle;
+  font-size: 0;
+  cursor: pointer;
+  background-color: $base-threme-color;
+}

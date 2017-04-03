@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media($desktop) {
+    min-width: 728px;
+  }
+  @media($desktop) {
+    width: 1200px;
+  }
+}

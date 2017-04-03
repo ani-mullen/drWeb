@@ -1,0 +1,164 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: $base-color-white;
+  padding: 0 20px;
+  max-width: 300px;
+}
+
+.form--forgot {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__box {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.form__box-title {
+  padding-top: 20px;
+}
+
+.form__column {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__row--captcha,
+.form__row--captcha-input,
+.form__row--submit,
+.form__row--cancel {
+  @media(min-width: 560px) {
+    width: 48%;
+  }
+  @media(min-width: 840px) {
+    width: 24%;
+  }
+}
+
+.form__row--login,
+.form__row--captcha,
+.form__row--captcha-input {
+  @media(min-width: 840px) {
+    width: 32%;
+  }
+}
+
+.form__row--submit,
+.form__row--cancel {
+  @media(min-width: 840px) {
+    width: 20%;
+  }
+}
+
+.form__row--cancel {
+  @media(min-width: 840px) {
+    position:relative;
+    right: 58%;
+  }
+}
+
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form__input {
+  box-sizing: border-box;
+  position: relative;
+  height: 48px;
+  width: 100%;
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-right: 58px;
+  @mixin set-font $line,
+  $line;
+  padding: 15px 0px 15px 15px;
+  outline: none;
+  border: 1px solid $base-color-lightgrey;
+  background-color: $base-color-lightgrey;
+  color: $base-color-black;
+  font-weight: 700;
+  &:hover {
+    border: 1px solid $base-color-grey;
+  }
+  &:focus {
+    border: 1px solid $base-color-grey;
+    background-color: $base-color-white;
+  }
+}
+
+.form__input-invalid {
+  border: 1px solid $error-color;
+}
+
+.form__input[type=submit] {
+  padding: 15px 0;
+  background-color: $base-threme-color;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  &:hover {
+    border: none;
+    opacity: 0.8;
+  }
+  &:focus {
+    border: none;
+    background-color: #7a9e5a;
+  }
+  &:active {
+    border: none;
+    color: $base-color-lightgrey;
+  }
+}
+
+.form__error,
+.form__password-error {
+  @mixin set-font calc($line * 0.9),
+  calc($line * 1);
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.form__password-forgot,
+.form__download a {
+  @mixin set-font calc($line * 0.9),
+  calc($line * 1.2);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: right;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: $base-color-darkgrey;
+}
+
+.form__download a {
+  text-align: center;
+}
+
+.form__password-forgot:hover,
+.form__download a:hover {
+  color: $base-color-black;
+}

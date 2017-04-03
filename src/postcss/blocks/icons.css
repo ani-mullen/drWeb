@@ -1,0 +1,23 @@
+.icon-social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: $base-color-white;
+}
+
+.icon-user {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.icon-password  {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+}

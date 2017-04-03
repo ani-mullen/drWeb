@@ -1,0 +1,17 @@
+$font-family-regular: 'Roboto Light', Helvetica, sans-serif;
+$font-family-bold: 'Roboto Regular', Helvetica, sans-serif;
+
+$base-color-white:#ffffff;
+$base-color-black:#000000;
+$base-color-grey:#e5e5e5;
+$base-color-lightgrey:#fafafa;
+$base-color-darkgrey:#808080;
+$base-threme-color:#7fb94a;
+
+$error-color:#ff5c5c;
+
+$line:1rem;
+
+$tablet: (min-width:768px);
+$desktop: (min-width:1200px);
+

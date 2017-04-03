@@ -1,0 +1,13 @@
+@import "general/fonts.css";
+@import "general/normalize.css";
+@import "general/variables.css";
+@import "general/mixins.css";
+
+@import "blocks/wrapper.css";
+@import "blocks/page.css";
+@import "blocks/page-footer.css";
+@import "blocks/icons.css";
+
+@import "blocks/form.css";
+@import "blocks/captcha.css";
+@import "blocks/password-recovery.css";
